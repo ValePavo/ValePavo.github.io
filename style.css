@@ -103,6 +103,15 @@ li {
   margin-bottom: 0.3rem;
 }
 
+/* MEDIA */
+.project-media {
+  margin-top: 2rem;
+}
+
+.project-media iframe {
+  border-radius: 8px;
+}
+
 .contribution {
   margin-top: 1.5rem;
   padding: 1.2rem 1.4rem;
