@@ -87,6 +87,18 @@ nav {
   margin: 0 auto;
 }
 
+.confidentiality-notice {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  padding: 20px 30px;
+  border: 1px solid #333;
+  border-radius: 12px;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
 /* About the Project */
 .project-info {
   margin-bottom: 60px;

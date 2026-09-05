@@ -97,7 +97,7 @@
         <div class="role-content">
           <div class="role-item">
             <h3>Gameplay Programmer</h3>
-            <p>Developed and implemented gameplay mechanics</p>
+            <p>Designed and implemented core game systems and mechanics</p>
           </div>
           <div class="role-item">
             <h3>Multiplayer Programmer</h3>
@@ -144,7 +144,7 @@
           <div class="role-item">
             <h3>VFX</h3>
             <p>
-              Designed and integrated gameplay-related VFX, ensuring visual
+              Designed and integrated real-time VFX, ensuring visual
               clarity and performance efficiency
             </p>
           </div>
@@ -152,7 +152,7 @@
             <h3>Performance Optimization</h3>
             <p>
               Performed profiling, debugging, and optimization to identify and
-              resolve gameplay and networking issues, ensuring a smooth and
+              resolve runtime and networking issues, ensuring a smooth and
               engaging player experience
             </p>
           </div>
@@ -169,11 +169,13 @@
         </p>
         <div class="footer-contacts">
           <a
-            href="mailto:valeriopaventi@gmail.com?subject=Contact%20from%20Portfolio"
-            class="contact-item"
+            href="#"
+            data-u="valeriopaventi"
+            data-d="gmail.com"
+            class="contact-item email-link"
           >
             <img src="../Assets/icons/email-icon.svg" alt="email" />
-            <span>valeriopaventi@gmail.com</span>
+            <span>valeriopaventi&#64;gmail&#46;com</span>
           </a>
 
           <a
@@ -196,5 +198,11 @@
         </div>
       </div>
     </footer>
+  <script>
+    document.querySelector('.email-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      location.href = 'mailto:' + this.dataset.u + '@' + this.dataset.d + '?subject=Contact%20from%20Portfolio';
+    });
+  </script>
   </body>
 </html>

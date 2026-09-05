@@ -35,9 +35,12 @@
               <span>love of what you are doing.</span>
             </h1>
             <p>
-              Game developer with over 8 years of experience in Unity and nearly
-              4 years in professional game development. Strong focus on gameplay
-              programming, systems design, and performance optimization.
+              XR & real-time 3D developer with 9 years of Unity expertise.
+              Specialized in immersive systems across VR, AR, and
+              performance-critical applications — including a shipped VR title
+              on Meta Quest and PlayStation VR2. Background as CTO, with
+              experience architecting scalable systems and leading
+              cross-functional teams.
             </p>
             <div class="about-btn">
               <a
@@ -58,19 +61,29 @@
         <section class="container experience-with">
           <h2>EXPERIENCE WITH</h2>
           <div class="experience-with-lang">
-            <div><img src="Assets/icons/unity.png" alt="html logo" /></div>
-            <div><img src="Assets/icons/ue.png" alt="html logo" /></div>
-            <div><img src="Assets/icons/csharp.png" alt="html logo" /></div>
-            <div><img src="Assets/icons/c++.png" alt="html logo" /></div>
-            <div><img src="Assets/icons/metahome.png" alt="html logo" /></div>
-            <div><img src="Assets/icons/pshome.png" alt="html logo" /></div>
-            <div><img src="Assets/icons/mongo.png" alt="html logo" /></div>
+            <div><img src="Assets/icons/unity.png" alt="Unity" /></div>
+            <div><img src="Assets/icons/ue.png" alt="Unreal Engine" /></div>
+            <div><img src="Assets/icons/csharp.png" alt="C#" /></div>
+            <div><img src="Assets/icons/c++.png" alt="C++" /></div>
+            <div><img src="Assets/icons/metahome.png" alt="Meta Quest" /></div>
+            <div><img src="Assets/icons/pshome.png" alt="PlayStation" /></div>
+            <div><img src="Assets/icons/mongo.png" alt="MongoDB" /></div>
           </div>
         </section>
         <section class="container" id="projects">
           <h2 class="primary-heading heading-project">PROJECTS</h2>
+          <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="XR">XR</button>
+            <button class="filter-btn" data-filter="VR">VR</button>
+            <button class="filter-btn" data-filter="AR">AR</button>
+            <button class="filter-btn" data-filter="Multiplayer">Multiplayer</button>
+            <button class="filter-btn" data-filter="Web3">Web3</button>
+            <button class="filter-btn" data-filter="Systems">Systems</button>
+            <button class="filter-btn" data-filter="Shipped">Shipped</button>
+          </div>
           <div class="projects">
-            <a href="projects/mars-kitchen.html" class="project-item">
+            <a href="projects/mars-kitchen.html" class="project-item" data-tags="XR VR Shipped">
               <img
                 src="Assets/images/MK_Master Image_16_9.jpg"
                 alt="Mars Kitchen"
@@ -78,20 +91,84 @@
               <div class="project-title">
                 <p>CLICK HERE TO VISIT</p>
                 <h3>Mars Kitchen</h3>
+                <div class="card-tags">
+                  <span class="card-tag">XR</span>
+                  <span class="card-tag">VR</span>
+                  <span class="card-tag shipped">Shipped</span>
+                </div>
               </div>
             </a>
-            <a href="projects/polyverse.html" class="project-item">
+            <a href="projects/polyverse.html" class="project-item" data-tags="XR Multiplayer Web3">
               <img src="Assets/images/polyverse_main.jpg" alt="Polyverse" />
               <div class="project-title">
                 <p>CLICK HERE TO VISIT</p>
                 <h3>Polyverse</h3>
+                <div class="card-tags">
+                  <span class="card-tag">XR</span>
+                  <span class="card-tag">Multiplayer</span>
+                  <span class="card-tag">Web3</span>
+                </div>
               </div>
             </a>
-            <a href="projects/acryptia.html" class="project-item">
+            <a href="projects/acryptia.html" class="project-item" data-tags="XR Multiplayer Web3 Shipped">
               <img src="Assets/images/acrytpia_cover.png" alt="Acryptia" />
               <div class="project-title">
                 <p>CLICK HERE TO VISIT</p>
                 <h3>Acryptia</h3>
+                <div class="card-tags">
+                  <span class="card-tag">XR</span>
+                  <span class="card-tag">Multiplayer</span>
+                  <span class="card-tag">Web3</span>
+                  <span class="card-tag shipped">Shipped</span>
+                </div>
+              </div>
+            </a>
+            <a href="projects/unreleased.html" class="project-item" data-tags="Systems">
+              <div class="project-img-placeholder">Unreleased Project</div>
+              <div class="project-title">
+                <p>CLICK HERE TO VISIT</p>
+                <h3>Unreleased Project</h3>
+                <div class="card-tags">
+                  <span class="card-tag">ECS/DOTS</span>
+                  <span class="card-tag">Systems</span>
+                  <span class="card-tag">PC / Handheld</span>
+                </div>
+              </div>
+            </a>
+            <a href="projects/argo.html" class="project-item" data-tags="AR Shipped">
+              <div class="project-img-placeholder">ARgo</div>
+              <div class="project-title">
+                <p>CLICK HERE TO VISIT</p>
+                <h3>ARgo</h3>
+                <div class="card-tags">
+                  <span class="card-tag">AR</span>
+                  <span class="card-tag">Advertising</span>
+                  <span class="card-tag shipped">Shipped</span>
+                </div>
+              </div>
+            </a>
+            <a href="projects/lisciani.html" class="project-item" data-tags="AR Shipped">
+              <div class="project-img-placeholder">Lisciani AR</div>
+              <div class="project-title">
+                <p>CLICK HERE TO VISIT</p>
+                <h3>Lisciani AR</h3>
+                <div class="card-tags">
+                  <span class="card-tag">AR</span>
+                  <span class="card-tag">Education</span>
+                  <span class="card-tag shipped">Shipped</span>
+                </div>
+              </div>
+            </a>
+            <a href="projects/expertar.html" class="project-item" data-tags="AR Shipped">
+              <div class="project-img-placeholder">ExpertAR</div>
+              <div class="project-title">
+                <p>CLICK HERE TO VISIT</p>
+                <h3>ExpertAR</h3>
+                <div class="card-tags">
+                  <span class="card-tag">AR</span>
+                  <span class="card-tag">Retail</span>
+                  <span class="card-tag shipped">Shipped</span>
+                </div>
               </div>
             </a>
           </div>
@@ -112,10 +189,10 @@
                 Web3 and blockchain integration, and one designed for VR.
                 Working on resource-constrained devices taught me to prioritize
                 performance optimization and efficient resource management for
-                non high-end hardware. As a Multiplayer Programmer, I
+                non-high-end hardware. As a Multiplayer Programmer, I
                 architected secure, server-authoritative solutions with Web3
                 integration, always maintaining a strong focus on delivering a
-                smooth and seamless gameplay experience.
+                smooth and seamless player experience.
               </p>
             </div>
             <div class="experience-item">
@@ -156,28 +233,27 @@
       <div class="container">
         <h2>About Me</h2>
         <p>
-          I am a Game Developer with over 8 years of experience using Unity and
-          nearly 4 years working professionally in the video game industry.
-          Throughout my career, I have contributed to a wide range of projects,
-          developing gameplay mechanics, save systems, and various types of
-          inventory systems, as well as working on multiplayer architectures and
-          immersive VR experiences. I have collaborated closely with multiple
-          departments, taking on both technical and coordination
-          responsibilities, including acting as a project lead when needed. Over
-          the years, I have developed a solid understanding of shading and VFX,
-          and my work with VR devices has strengthened my focus on performance
-          optimization, particularly for non–high-end hardware. I am passionate
-          about building scalable, well-structured systems and delivering
-          high-quality experiences while maintaining strong performance across
-          platforms
+          XR and real-time 3D developer with 9 years of Unity expertise,
+          including 5 years as CTO leading AR mobile projects across education,
+          retail, and advertising. Throughout my career, I have architected and
+          shipped immersive experiences across VR, AR, and browser — from
+          custom physics and multiplayer systems to server-authoritative
+          networking and blockchain integration. My VR work, including a title
+          shipped on Meta Quest and PlayStation VR2, has sharpened my focus on
+          performance optimization for resource-constrained hardware. I have a
+          solid foundation in shading, VFX, and procedural systems, and a track
+          record of leading cross-functional teams while staying hands-on with
+          the technical work.
         </p>
         <div class="footer-contacts">
           <a
-            href="mailto:valeriopaventi@gmail.com?subject=Contact%20from%20Portfolio"
-            class="contact-item"
+            href="#"
+            data-u="valeriopaventi"
+            data-d="gmail.com"
+            class="contact-item email-link"
           >
             <img src="Assets/icons/email-icon.svg" alt="email" />
-            <span>valeriopaventi@gmail.com</span>
+            <span>valeriopaventi&#64;gmail&#46;com</span>
           </a>
 
           <a
@@ -200,5 +276,24 @@
         </div>
       </div>
     </footer>
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.project-item').forEach(card => {
+          const tags = (card.dataset.tags || '').split(' ');
+          card.classList.toggle('hidden', filter !== 'all' && !tags.includes(filter));
+        });
+      });
+    });
+
+    document.querySelector('.email-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      location.href = 'mailto:' + this.dataset.u + '@' + this.dataset.d + '?subject=Contact%20from%20Portfolio';
+    });
+  </script>
   </body>
 </html>
